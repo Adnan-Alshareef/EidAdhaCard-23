@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="Ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./style/animate.min.css">
+</head>
+
+<body>
+    <div class="bg-page">
+
+        <div class="innrContent">
+            <div>
+                <img class="imgwidth titleSpace" src="./images/BG_Image.svg" alt="">
+                <img class="imgwidth titleSpac2" src="./images/Colleagues.svg" alt="">
+            </div>
+        </div>
+        <div class="center animate__animated animate__zoomIn animate__slower">
+            <div style="">
+                <div>
+                    <div class=" info">
+                        <div class="selection">
+                            <select id="PersonalTitle" onchange="detectChange(this)">
+                                <option value="أخوكم">أخوكم</option>
+                                <option value="أختكم">أختكم</option>
+                            </select>
+                            <input type="text" id="uName" class="namearea" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="img-row table_class animate__animated animate__fadeIn" id="choose_content">
+                        <div style='position: relative;'>
+                            <input onclick="I_c()" type="radio" name="template_cbs" id="cb1" />
+                            <label for="cb1"><img src="./images/Thumb_1.png" /></label>
+                            <div id="img2" style="position: absolute;   bottom: 20px; right: 20px; display: none;">
+                                <img src="./images/sheep.svg" style="width: 25px;" alt="">
+                            </div>
+
+                        </div>
+                        <div style='position: relative;'>
+                            <input onclick="II_c()" type="radio" name="template_cbs" id="cb2" />
+                            <label for="cb2"><img src="./images/Thumb_2.png" /></label>
+                            <div id="img1" style="position: absolute;   bottom: 20px; right: 20px;display: none;">
+                                <img src="./images/sheep.svg" style="width: 25px;" alt="">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <div class="download-row table_class animate__animated animate__fadeIn" id="choose_content">
+                            <button type="submit" disabled class="downloadBTN" id="downloadLNK" onclick="downloadImg()"
+                                download="">تحميل</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="./Script/image_script_download.js"></script>
+    <script src="./Script/Script.js"></script>
+
+</body>
+
+</html>
